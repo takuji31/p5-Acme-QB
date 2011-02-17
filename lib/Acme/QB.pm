@@ -1,4 +1,4 @@
-package Acme::QBe;
+package Acme::QB;
 use strict;
 use warnings;
 our $VERSION = '0.01';
@@ -9,9 +9,9 @@ use Class::Accessor::Lite (
     new => 1,
 );
 
-our @EXPORT = qw/ QBe /;
+our @EXPORT = qw/ QB /;
 
-sub QBe {
+sub QB {
     __PACKAGE__->new;
 }
 
@@ -31,17 +31,17 @@ __END__
 
 =head1 NAME
 
-Acme::QBe - キュウべぇと契約
+Acme::QB - キュウべぇと契約
 
 =head1 SYNOPSIS
 
   use strict;
   use warnings;
   use utf8;
-  use Acme::QBe;
+  use Acme::QB;
 
   # output 僕と契約して、社畜になってよ！
-  print QBe->to_keiyaku('社畜');
+  print QB->to_keiyaku('社畜');
 
 =head1 DESCRIPTION
 
