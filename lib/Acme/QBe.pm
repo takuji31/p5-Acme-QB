@@ -27,17 +27,25 @@ sub to_keiyaku {
 'さぁ、受け入れるといい。それが君の運命だ。';
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
-Acme::QBe -
+Acme::QBe - キュウべぇと契約
 
 =head1 SYNOPSIS
 
+  use strict;
+  use warnings;
+  use utf8;
   use Acme::QBe;
+
+  # output 僕と契約して、社畜になってよ！
+  print QBe->to_keiyaku('社畜');
 
 =head1 DESCRIPTION
 
-Acme::QBe is
+キュウべぇと契約できます、たぶん。
 
 =head1 AUTHOR
 
