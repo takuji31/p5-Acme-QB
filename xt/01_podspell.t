@@ -7,4 +7,4 @@ all_pod_files_spelling_ok('lib');
 __DATA__
 Nishibayashi Takuji
 takuji {at} senchan.jp
-Acme::QBe
+Acme::QB
