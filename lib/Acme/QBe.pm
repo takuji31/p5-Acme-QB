@@ -3,7 +3,28 @@ use strict;
 use warnings;
 our $VERSION = '0.01';
 
-1;
+use parent qw/Exporter::Lite/;
+
+use Class::Accessor::Lite (
+    new => 1,
+);
+
+our @EXPORT = qw/ QBe /;
+
+sub QBe {
+    __PACKAGE__->new;
+}
+
+sub to_keiyaku {
+    my ( $self, $what, $force ) = @_;
+
+    $what ||= '魔法少女';
+    $force = 1 unless defined $force;
+
+    return sprintf("僕と契約して、%sになって%s",$what, $force ? 'よ！' : 'ほしいんだ');
+}
+
+'さぁ、受け入れるといい。それが君の運命だ。';
 __END__
 
 =head1 NAME

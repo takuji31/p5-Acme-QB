@@ -5,6 +5,7 @@ readme_pod_from 'lib/Acme/QBe.pm';
 githubmeta;
 
 # requires '';
+requires 'Exporter::Lite';
 
 tests 't/*.t';
 author_tests 'xt';
